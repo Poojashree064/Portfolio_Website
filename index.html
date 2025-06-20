@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
     <meta property="og:title" content="Pooja Shree S J - Portfolio">
     <meta property="og:description" content="Portfolio of Pooja Shree S J, Computer Science Engineering Student specializing in Machine Learning and Generative AI">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pooja Shree S J - Portfolio</title>
     <style>
         * {
@@ -14,11 +15,14 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             line-height: 1.6;
             color: #fff;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
 
         .container {
@@ -108,13 +112,13 @@
 
         /* Hero Section */
         .hero {
-            height: 100vh;
+            min-height: 100vh;
+            height: auto;
             display: flex;
             align-items: center;
             justify-content: center;
-            text-align: center;
             background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);
-            padding-top: 80px;
+            padding: 80px 0;
         }
 
         .hero-container {
@@ -154,6 +158,9 @@
         .hero-content {
             flex: 1;
             text-align: left;
+            max-width: 100%;
+            overflow: hidden;
+            word-wrap: break-word;
         }
 
         .hero-content h1 {
@@ -165,6 +172,7 @@
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
+            line-height: 1.2;
         }
 
         .hero-content h2 {
@@ -628,18 +636,6 @@
 
         /* Responsive */
         @media (max-width: 768px) {
-            .hero-content h1 {
-                font-size: 2.5rem;
-            }
-            
-            .hero-content h2 {
-                font-size: 1.5rem;
-            }
-            
-            .hero-content .subtitle {
-                font-size: 1.3rem;
-            }
-            
             .hero-container {
                 flex-direction: column;
                 gap: 2rem;
@@ -649,15 +645,42 @@
             
             .hero-content {
                 text-align: center;
+                padding: 0 1rem;
+            }
+            
+            .hero-content h1 {
+                font-size: 2rem;
+                line-height: 1.2;
+                margin-bottom: 0.5rem;
+            }
+            
+            .hero-content h2 {
+                font-size: 1.3rem;
+                margin: 0.5rem 0;
+            }
+            
+            .hero-content .subtitle {
+                font-size: 1.1rem;
+                margin: 1rem 0;
+                line-height: 1.4;
+            }
+            
+            .hero-content p {
+                font-size: 1rem;
+                line-height: 1.5;
+                margin: 1.5rem auto;
+                max-width: 100%;
             }
             
             .social-links {
                 justify-content: center;
+                margin: 1.5rem auto;
             }
             
             .profile-image {
-                width: 250px;
-                height: 250px;
+                width: 200px;
+                height: 200px;
+                margin: 0 auto;
             }
             
             .about-content {
@@ -704,25 +727,8 @@
                 padding: 3rem 0;
             }
 
-            .hero-content h1 {
-                font-size: 2.2rem;
-            }
-
-            .hero-content h2 {
-                font-size: 1.3rem;
-            }
-
-            .hero-content .subtitle {
-                font-size: 1.1rem;
-            }
-
             .section-title {
                 font-size: 2rem;
-            }
-
-            .profile-image {
-                width: 200px;
-                height: 200px;
             }
         }
 
