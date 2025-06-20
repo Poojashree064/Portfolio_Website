@@ -114,7 +114,7 @@
             justify-content: center;
             text-align: center;
             background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);
-            padding-top: 80px; /* Added for fixed nav */
+            padding-top: 80px;
         }
 
         .hero-container {
@@ -129,7 +129,7 @@
         .hero-image {
             flex-shrink: 0;
             perspective: 1000px;
-            background: #764ba2; /* Fallback color */
+            background: #764ba2;
             border-radius: 10px;
             display: flex;
             justify-content: center;
@@ -177,9 +177,20 @@
 
         .hero-content .subtitle {
             font-size: 1.5rem;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
             opacity: 0;
             animation: fadeInUp 1s ease 0.4s forwards;
+            line-height: 1.4;
+        }
+
+        .ml-text {
+            color: #0e0c6e;
+            font-weight: 600;
+        }
+
+        .ai-text {
+            color: #1d0663;
+            font-weight: 600;
         }
 
         .hero-content p {
@@ -188,6 +199,7 @@
             max-width: 600px;
             opacity: 0;
             animation: fadeInUp 1s ease 0.6s forwards;
+            line-height: 1.6;
         }
 
         .social-links {
@@ -624,6 +636,10 @@
                 font-size: 1.5rem;
             }
             
+            .hero-content .subtitle {
+                font-size: 1.3rem;
+            }
+            
             .hero-container {
                 flex-direction: column;
                 gap: 2rem;
@@ -689,11 +705,15 @@
             }
 
             .hero-content h1 {
-                font-size: 2rem;
+                font-size: 2.2rem;
             }
 
             .hero-content h2 {
                 font-size: 1.3rem;
+            }
+
+            .hero-content .subtitle {
+                font-size: 1.1rem;
             }
 
             .section-title {
@@ -758,13 +778,12 @@
             <div class="hero-content">
                 <h1>Hi, I'm Pooja Shree S J</h1>
                 <h2>Computer Science Engineering Student</h2>
-                <p class="subtitle">Specializing in <span style="color: #0e0c6e;">Machine Learning</span> & <span style="color: #1d0663;">Generative AI</span></p>
+                <p class="subtitle">Specializing in <span class="ml-text">Machine Learning</span> & <span class="ai-text">Generative AI</span></p>
                 <p>Enthusiastic and quick-to-adapt CS Final Year student with a passion for creating innovative solutions that bridge the gap between technology and user needs. Currently pursuing B.E in Computer Science Engineering with expertise in AI ML, and Full-Stack Development.</p>
                 
                 <div class="social-links">
                     <a href="mailto:poojashree.veccse@gmail.com" title="Email">📧</a>
                     <a href="https://github.com/Poojashree064" title="GitHub" target="_blank">🔗</a>
-                    
                 </div>
                 
                 <a href="#contact" class="cta-button">Download Resume</a>
